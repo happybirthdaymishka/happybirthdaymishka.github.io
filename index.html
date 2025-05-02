@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<!--
+Please be respectful. My website is not a template. 
+A personal website is an extension of you, so I'd like to encourage you to make something that is truly your own. 
+Don't deny yourself the rewarding experience of making a unique website that is true to you. 
+
+It's totally okay to copy my code or learn from it to improve your own code, I'd just rather people not make reskins of my website.
+Thank you!
+
+ASCII Art by Blazej Kozlowski  
+                              __
+                     /\    .-" /
+                    /  ; .'  .' 
+                   :   :/  .'   
+                    \  ;-.'     
+       .--""""--..__/     `.    
+     .'           .'    `o  \   
+    /                    `   ;  
+   :                  \      :  
+ .-;        -.         `.__.-'  
+:  ;          \     ,   ;       
+'._:           ;   :   (        
+    \/  .__    ;    \   `-.     
+ bug ;     "-,/_..--"`-..__)    
+     '""--.._:
+
+-->
+
+<html>
+  <head>  <script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous"></script> 
+    <meta charset="UTF-8">
+    <title>happy birthday mishka !!⁠</title>
+        <link rel="icon" type="image/png" href="icons/luckyclover.png">
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+   <style>
+   body {
+  background-color: white;
+  
+} 
+@font-face {
+font-family: 'ktegaki';
+src: url(https://cloverbell.neocities.org/ktegaki/ktegaki-webfont.woff) format('woff');
+}
+
+
+::-webkit-scrollbar {
+width: 8px; 
+background: transparent
+border: 0px  
+height: 200px;
+}
+
+::-webkit-scrollbar-thumb {
+background: #fcebde;
+
+
+}
+body {
+  background-image: url("art/bg.png");
+  background-color:#ecdfcd;
+  background-size:cover;
+     background-repeat: no-repeat;
+  background-attachment: fixed;
+font-family: 'ktegaki';
+color: #a2806c;
+font-size:23px;
+}
+
+hr {
+  border: 1.5px solid #f4d4c9;
+}
+
+a:link {
+  color: #AC8872;
+}
+ 
+ 
+a:visited {
+  color: #AC8872;
+}
+ 
+ 
+a:hover {
+  color: #D1AD90;
+}
+ 
+ 
+a:active {
+  color: #AC8872 ;
+
+}
+ ::selection {
+background-color: #fcebde;
+
+}
+html {
+cursor: url(art/cursor.png), auto;
+
+}
+.container {
+
+    border: 0px solid black;
+     background-image:url(art/layout.png) 
+    ;
+    background-size:cover;
+      position:absolute; 
+    margin-left: 0 auto;
+    width: 1190px;
+    height:808px;
+    left: 49%;
+top: 45%;
+transform: translate(-50%, -50%);
+}
+  
+  
+  .side {
+    
+
+     height: 563px;
+     width:195px;
+    border: 0px solid #67584c;   
+    position: absolute;
+    padding: 10px; 
+    overflow: scroll;
+   
+    
+  
+            bottom:75px;
+          left:178px;
+          
+  }
+   
+      .main {
+
+     height: 575px;
+     width:600px;
+    border: 0px solid #67584c;   
+    position: absolute;
+    padding: 6px; 
+    overflow: fixed;
+   
+    
+  
+            bottom:100px;
+          right:175px;   
+  }
+   
+      .updates {
+
+        
+ font-family:'ktegaki';
+  color: #9F7F6B;
+   font-size: 20px;
+     height: 175px;
+     width:305px;
+    border: px solid #67584c;   
+    position: absolute;
+    padding: 10px; 
+    overflow: scroll;
+   
+    z-index: 1500;
+  
+            bottom:24px;
+          right:-20px;   
+  }  
+    .bottom {
+    
+
+     height: 50px;
+     width:780px;
+    border: px solid #67584c;   
+    position: absolute;
+    padding: 10px; 
+    overflow: fixed;
+    font-size:19px;
+   
+    
+  
+            bottom:-60px;
+          left:120px;
+          
+  }
+  
+  .musicbox {
+    
+    height: 80px;
+    width:200px;
+    border:px solid black;
+    position:fixed;
+   bottom:0px;
+   left:80px;
+  }
+    
+    .marquee {
+      height:0px;
+      width:0px;
+    }
+    
+    #musicplayer{
+        background:; /* background color of player */
+        border:0px solid #a2806c; /* border around player */
+        width:200px; /* width of the player */
+  
+
+    }
+ 
+    .songtitle{
+    
+        border-bottom:px solid #a2806c; /* border under song title */
+        display:block;
+    }
+ 
+    .controls{
+        font-size:18px !important; /* size of controls */
+        background-color:; /* background color of controls */
+  
+        text-align:center;
+        width:100%;
+    }
+ 
+    .controls td{
+        padding:5px 5px 0px 5px; /* padding around controls */
+    }
+ 
+    .seeking{
+            background-color:white; /* background color of controls */
+        background-image: url(/art/plaid.png);
+ 
+        display:flex;
+        justify-content: space-evenly;
+        padding:5px; /* padding around seeking bar */
+    }
+ 
+    .current-time{
+        padding-right:5px;
+    }
+ 
+    .total-duration{
+        padding-left:5px;
+    }
+ 
+    i.fas:hover{
+        cursor:help;
+    }
+ 
+    i.fas.fa-pause, i.fas.fa-play, i.fas.fa-forward, i.fas.fa-backward{
+        color:#c4a287; /* color of controls */
+    }
+    
+    input[type=range] {
+        -webkit-appearance: none;
+        width: 100%;
+            background-color: white; /* background color of controls */
+  /* background color of seeking bar - make the color same as .seeking background color */
+    }
+    
+    input[type=range]:focus {
+        outline: none;
+    }
+    
+    /* settings for chrome browsers */
+    input[type=range]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 2px; /* thickness of seeking track */
+        cursor: help;
+        background: white; /* color of seeking track */
+    }
+    
+    input[type=range]::-webkit-slider-thumb {
+        height: 15px; /* height of seeking square */
+        width: 15px; /* width of seeking square */
+        border-radius: 7px; /* change to 5px if you want a circle seeker */
+        
+        background: #f8dbc9; /* color of seeker square */
+        cursor: help;
+        -webkit-appearance: none;
+        margin-top: -4.5px; 
+    }
+    
+    /* settings for firefox browsers */
+    input[type=range]::-moz-range-track {
+        width: 100%;
+        height: 2px; /* thickness of seeking track */
+        cursor: help;
+        background: white; /* color of seeking track */
+    }
+    
+    input[type=range]::-moz-range-thumb {
+        height: 10px; /* height of seeking square */
+        width: 10px; /* width of seeking square */
+        border-radius: 5px; /* change to 5px if you want a circle seeker */
+        background: #f8dbc9; /* color of seeker square */
+        cursor: help;
+        border:none;
+    }
+
+
+  
+.button1 {
+ margin-bottom: 10px;
+ height:62px;
+ display:block;
+ background:transparent url('n_n/buttons/home.png') 
+ center top no-repeat;
+   background-repeat: no-repeat;
+  background-size: 185px 62px;
+}
+
+.button1:hover {
+   margin-bottom: 10px;
+   height:62px;
+ display:block;
+   background-image:url('n_n/buttons2/home.png'); center top no-repeat;
+  background-size: 185px 62px;
+
+  }
+  
+  .button2 {
+ margin-bottom: 10px;
+ height:62px;
+ display:block;
+ background:transparent url('n_n/buttons/about.png') 
+ center top no-repeat;
+   background-repeat: no-repeat;
+  background-size: 185px 62px;
+}
+
+.button2:hover {
+   margin-bottom: 10px;
+   height:62px;
+ display:block;
+   background-image:url('n_n/buttons2/about.png'); center top no-repeat;
+  background-size: 185px 62px;
+
+  }
+  
+  .button3 {
+ margin-bottom: 10px;
+ height:65px;
+ display:block;
+ background:transparent url('n_n/buttons/diary.png') 
+ center top no-repeat;
+   background-repeat: no-repeat;
+  background-size: 188px 65px;
+}
+
+.button3:hover {
+   margin-bottom: 10px;
+   height:65px;
+ display:block;
+   background-image:url('n_n/buttons2/diary.png'); center top no-repeat;
+  background-size: 188px 65px;
+
+  }
+  
+  .button4 {
+ margin-bottom: 10px;
+ height:62px;
+ display:block;
+ background:transparent url('n_n/buttons/art.png') 
+ center top no-repeat;
+   background-repeat: no-repeat;
+  background-size: 185px 62px;
+}
+
+.button4:hover {
+   margin-bottom: 10px;
+   height:62px;
+ display:block;
+   background-image:url('n_n/buttons2/art.png'); center top no-repeat;
+  background-size: 185px 62px;
+
+  }
+.button5 {
+ margin-bottom: 10px;
+ height:62px;
+ display:block;
+ background:transparent url('n_n/buttons/hobby.png') 
+ center top no-repeat;
+   background-repeat: no-repeat;
+  background-size: 185px 62px;
+}
+
+.button5:hover {
+   margin-bottom: 10px;
+   height:62px;
+ display:block;
+   background-image:url('n_n/buttons2/hobby.png'); center top no-repeat;
+  background-size: 185px 62px;
+
+  }
+  
+  .button6 {
+ margin-bottom: 10px;
+ height:62px;
+ display:block;
+ background:transparent url('n_n/buttons/contact.png') 
+ center top no-repeat;
+   background-repeat: no-repeat;
+  background-size: 185px 62px;
+}
+
+.button6:hover {
+   margin-bottom: 10px;
+   height:62px;
+ display:block;
+   background-image:url('n_n/buttons2/contact.png'); center top no-repeat;
+  background-size: 185px 62px;
+
+  }
+  
+  .button7 {
+ margin-bottom: 10px;
+ height:62px;
+ display:block;
+ background:transparent url('n_n/buttons/links.png') 
+ center top no-repeat;
+   background-repeat: no-repeat;
+  background-size: 185px 62px;
+}
+
+.button7:hover {
+   margin-bottom: 10px;
+   height:62px;
+ display:block;
+   background-image:url('n_n/buttons2/links.png'); center top no-repeat;
+  background-size: 185px 62px;
+
+  }
+  
+  .button8 {
+ margin-bottom: 10px;
+ height:62px;
+ display:block;
+ background:transparent url('n_n/buttons/archive.png') 
+ center top no-repeat;
+   background-repeat: no-repeat;
+  background-size: 185px 62px;
+}
+
+.button8:hover {
+   margin-bottom: 10px;
+   height:62px;
+ display:block;
+   background-image:url('n_n/buttons2/archive.png'); center top no-repeat;
+  background-size: 185px 62px;
+
+  }
+  h2 {
+  font-size: 15px;
+  display:inline;
+}
+   </style>
+
+  </head>
+
+
+
+ <div class=container>   
+    <div class=updates> 
+           <b><img src=n_n/keyicon.gif>꒰01.10.2025꒱</b> <a href=https://cloverbell.neocities.org/links2.html target="page">Links page</a> updated! You may need to clear your cache to see the update.<br>
+     <hr>
+               <b><img src=n_n/rabbit.gif>꒰07.21.2024꒱</b> New <a href=https://cloverbell.neocities.org/lunesdiary.html>diary entry</a>. I went to a jfashion swap meet! <br>
+               <hr>
+               <b><img src=materials/pixels/latte.webp>꒰06.30.2024꒱</b> New <a href=https://cloverbell.neocities.org/lunesdiary.html>diary entry</a>. Recap of the past month <br>
+     <hr>
+           <b><img src=n_n/shortcake2.webp>꒰05.02.2024꒱</b> New <a href=https://cloverbell.neocities.org/lunesdiary.html>diary entries</a>-- my vacation week full of fun and exploration! <br>
+     <hr>
+       <b><img src=n_n/keyicon.gif>꒰04.23.2024꒱</b> <a href=https://cloverbell.neocities.org/omurice.html>Omurice gallery</a> added, accessible through "hobby". You may need to clear your cache for the hobby page to update!<br>
+     <hr>
+        <b><img src=n_n/rabbit.gif>꒰04.17.2024꒱</b> New <a href=https://cloverbell.neocities.org/artgallery.html>artwork</a> in my art gallery, mostly film backgrounds<br>
+     <hr>
+    <b><img src=materials/pixels/latte.webp>꒰04.15.2024꒱</b> 2 new <a href=https://cloverbell.neocities.org/lunesdiary.html>diary entries</a>! One includes a little tour of my room and the other details a profound dream I had.<br>
+     <hr>
+    <b><img src=n_n/shortcake2.webp>꒰04.01.2024꒱</b> New <a href=https://cloverbell.neocities.org/lunesdiary.html>diary entry</a>. Opening some mail!<br>
+     <hr>
+     <b><img src=n_n/keyicon.gif>꒰03.10.2024꒱</b> New <a href=https://cloverbell.neocities.org/lunesdiary.html>diary entry</a>.<br>
+     <hr>
+       <b><img src=n_n/rabbit.gif>꒰03.07.2024꒱</b> New <a href=https://cloverbell.neocities.org/lunesdiary.html>diary entry</a>.<br>
+     <hr>
+    <b><img src=materials/pixels/latte.webp>꒰02.24.2023.꒱</b> A secret page was added. Hint: its accessible through the <a href=https://cloverbell.neocities.org/aboutlune.html>about</a> page! 
+<hr>   
+   <b><img src=n_n/shortcake2.webp>꒰02.19.2024꒱</b> New <a href=https://cloverbell.neocities.org/lunesdiary.html>diary entry</a>.<br>
+     <hr>
+           <b><img src=n_n/keyicon.gif>꒰10.28.2023.꒱</b> New photos in my <a href=https://cloverbell.neocities.org/photodiary.html>photo diary</a>!
+<hr>   
+       <b><img src=n_n/rabbit.gif>꒰10.27.2023.꒱</b> 2 new <a href=https://cloverbell.neocities.org/lunesdiary.html>diary entries</a>! ♪
+<hr>   
+     <b><img src=materials/pixels/latte.webp>꒰10.16.2023.꒱</b> Added a status widget to homepage, as well as some small tweaks. 
+<hr>   
+    <b><img src=n_n/shortcake2.webp>꒰10.15.2023꒱</b> New <a href=https://cloverbell.neocities.org/artgallery.html>art in the art gallery</a>. Mostly in the 'sketches' category<br>
+     <hr>
+        <b><img src=n_n/keyicon.gif>꒰08.18.2022꒱</b> New <a href=https://cloverbell.neocities.org/photodiary.html>photo diary</a>!<br>
+        <hr>
+    <b><img src=n_n/shortcake2.webp>꒰07.21.2023.⁠꒱
+</b> New <a href=https://cloverbell.neocities.org/archives.html target=page>archive</a> added!<br>
+<hr>
+     <b><img src=n_n/keyicon.gif>꒰07.18.2023꒱</b> New <a href=https://cloverbell.neocities.org/artgallery.html>art gallery</a>!<br>
+<hr>
+    <b><img src=n_n/rabbit.gif>꒰07.17.2022.꒱ </b> Materials page added! Can you find it?<br>
+<hr>
+ <b><img src=materials/pixels/latte.webp>꒰07.13.2023.꒱</b> Cloverbell 3.0 is here! Enjoy the new index, diary, and about page layouts! :D 
+<hr>   
+<b><img src=n_n/shortcake2.webp>꒰10.23.2022.⁠꒱
+</b> <a href=https://cloverbell.neocities.org/archive.html>Archive</a> added!<br>
+
+<hr>
+
+<b><img src=n_n/keyicon.gif>꒰⁠10.14.2022꒱</b> New <a href=https://cloverbell.neocities.org/about.html>about page</a>!<br>
+<hr>
+<b><img src=n_n/rabbit.gif>꒰08.04.2022.꒱ </b> <a href=https://cloverbell.neocities.org/acnl.html>Animal Crossing New Leaf</a> page added!<br>
+<hr>
+<b><img src=materials/pixels/latte.webp>꒰07.28.2022.꒱</b> <a href=https://cloverbell.neocities.org/acnh.html>Animal Crossing New Horizons</a> page added!
+<hr>
+<b><img src=n_n/shortcake2.webp>꒰07.24.2022.꒱ </b> <a href=https://cloverbell.neocities.org/monthlyrecs.html>Monthly Reccomendations</a> page has been added, as well as a new dream journal layout! Both can be found on my <a href=https://cloverbell.neocities.org/diary.html>diary</a> page.<br>
+<hr>
+<b><img src=n_n/keyicon.gif>꒰07.23.2022.꒱ </b> New diary layout!<br>
+<hr>
+<b><img src=n_n/rabbit.gif>꒰07.17.2022.⁠꒱</b> Animal Crossing page added-- more content will be added to it soon.<br>
+<hr>
+<b><img src=materials/pixels/latte.webp>꒰06.23.2022.⁠꒱</b> New home page!<br>
+<hr>
+<b><img src=n_n/shortcake2.webp>꒰11.19.2021.꒱</b> Photos page added!<br>
+<hr>
+<b><img src=n_n/keyicon.gif>꒰11.17.2021.⁠꒱</b> Art page added!<br>
+<hr>
+<b><img src=n_n/rabbit.gif>꒰11.16.2021.꒱ </b> Diary & Dream Journal added<br>
+<hr>
+<b><img src=materials/pixels/latte.webp>꒰01.15.2021.꒱</b> About page added<br>
+<hr>
+<b><img src=n_n/shortcake2.webp>꒰10.25.2021.꒱</b> Cloverbell is real! ૮₍´｡ᵔ ꈊ ᵔ｡`₎ა </div>
+
+
+
+
+ <div class=side> 
+ <center><img src=/art/1.png>
+
+   <a href="https://cloverbell.neocities.org/home" class="button1" title="home" target="page"></a>
+      <a href="https://cloverbell.neocities.org/aboutlune" class="button2" title="about"></a>
+         <a href="https://cloverbell.neocities.org/lunesdiary" class="button3" title="diary"></a>
+            <a href="https://cloverbell.neocities.org/artgallery" class="button4" title="art"></a>
+               <a href="https://cloverbell.neocities.org/hobby" class="button5" title="hobby"target="page"></a>
+                  <a href="https://cloverbell.neocities.org/contact" class="button6" title="contact" target="page"></a>
+                     <a href="https://cloverbell.neocities.org/links2" class="button7" title="links" target="page"></a>
+                        <a href="https://cloverbell.neocities.org/archives" class="button8" title="archive" target="page"></a>
+  
+              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center>click me for a souvenir! <img src=https://cloverbell.neocities.org/materials/pixels/rainbowstar2.gif>
+              </center>
+              <a href="https://cloverbell.neocities.org/materials" target="page"><img src=https://cloverbell.neocities.org/materials/decor/teddybear.gif></a>
+ </center>
+ </div>
+ <div class=main>
+ <center><img src=art/hbd.png height=35; style="position:fixed;top:130px;right:350px;"></center>
+  <img src="n_n/bunny.png" height=220 style="position:fixed; bottom:-85px; right:220px; z-index:2000;">
+ <img src="n_n/easel.png" height=410 style="position:fixed; bottom:-70px; right:-55px; z-index:1000;">
+<br>
+<iframe src="https://cloverbell.neocities.org/home.html" name="page"
+ width="100%" height="575" style="border:none;"
+></iframe> 
+ </div>
+
+ <div class=bottom> 
+  <br>
+<center>
+꒰ <a href="https://theflowering.neocities.org">flowering</a> <h2>//</h2> clover <img src=https://cloverbell.neocities.org/materials/pixels/2clovers.webp> ꒱&nbsp&nbsp
+ <!-- FC2 Counter  Starts here --> 
+<script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=89504058"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=89504058" /></noscript>
+<!-- FC2 Counter  Ends here -->
+</center>
+<div>
+    </div>
+  </div>  
+  </div>
+  
+</body>
+    <div class=marquee><marquee scrollamount="8" class="songtitle"></marquee></div>
+  <div class=musicbox>
+<img src=n_n/recordplayer.png height=80px style="position:absolute; bottom:0px; left:-75px; z-index=1000px;">
+         <div id="musicplayer" >
+      
+     
+            
+     
+ 
+        <table class="controls">
+            <tr>
+                <td>
+                    <div class="prev-track" onclick="prevTrack()"><i class="fas fa-backward"></i></div>
+                </td>
+                <td>
+                    <div class="playpause-track" onclick="playpauseTrack()" ><i class="fas fa-play"></i></div>
+                </td>
+                <td>
+                    <div class="next-track" onclick="nextTrack()"><i class="fas fa-forward"></i></div>
+                </td>
+            </tr>
+        </table>
+ 
+        <div class="seeking">
+            <div class="current-time">00:00</div>
+ 
+            <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+ 
+            <div class="total-duration">0:00</div>
+        </div>
+ 
+        <audio id="music" src=""></audio> 
+    </div>
+    
+    <script>
+        // initiate variables
+        let track_name = document.querySelector(".songtitle");
+ 
+        let playpause_btn = document.querySelector(".playpause-track");
+        let next_btn = document.querySelector(".next-track");
+        let prev_btn = document.querySelector(".prev-track");
+ 
+        let seek_slider = document.querySelector(".seek_slider");
+        let curr_time = document.querySelector(".current-time");
+        let total_duration = document.querySelector(".total-duration");
+ 
+        let track_index = 0;
+        let isPlaying = false;
+        let updateTimer;
+        
+        // create new audio element
+        let curr_track = document.getElementById("music");
+        
+        //
+        // DEFINE YOUR SONGS HERE!!!!!
+        // MORE THAN FOUR SONGS CAN BE ADDED!!
+        // JUST ADD ANOTHER BRACKET WITH NAME AND PATH
+        // CATBOX.MOE IS RECOMMENDED FOR UPLOADING MP3 FILES
+        let track_list = [
+            {
+                name:"5PM - Animal Crossing: New Leaf",
+                path:"https://files.catbox.moe/hazumg.mp3"
+            },
+            {
+                name:"5PM - Animal Crossing: New Leaf",
+                path:"https://files.catbox.moe/hazumg.mp3"
+            },
+            {
+                name:"5PM - Animal Crossing: New Leaf",
+                path:"https://files.catbox.moe/hazumg.mp3"
+            },
+            {
+               name:"5PM - Animal Crossing: New Leaf",
+                path:"https://files.catbox.moe/hazumg.mp3"
+            },
+        ];
+        //
+        //
+        //
+        //
+        //
+ 
+        function loadTrack(track_index) {
+            clearInterval(updateTimer);
+            resetValues();
+ 
+            // load a new track
+            curr_track.src = track_list[track_index].path;
+            curr_track.load();
+            
+            // update details of the track
+            track_name.textContent = "playing " + (track_index + 1) + " of " + track_list.length + ": " + track_list[track_index].name;
+ 
+            // set an interval of 1000 milliseconds for updating the seek slider
+            updateTimer = setInterval(seekUpdate, 1000);
+            
+            // move to the next track if the current one finishes playing 
+            curr_track.addEventListener("ended", nextTrack);
+        }
+ 
+        // reset values
+        function resetValues() {
+            curr_time.textContent = "0:00";
+            total_duration.textContent = "0:00";
+            seek_slider.value = 0;
+        }
+ 
+        // checks if song is playing
+        function playpauseTrack() {
+            if (!isPlaying) playTrack();
+            else pauseTrack();
+        }
+ 
+        // plays track when play button is pressed
+        function playTrack() {
+            curr_track.play();
+            isPlaying = true;
+            
+            // replace icon with the pause icon
+            playpause_btn.innerHTML = '<i class="fas fa-pause"></i>';
+        }
+ 
+        // pauses track when pause button is pressed
+        function pauseTrack() {
+            curr_track.pause();
+            isPlaying = false;
+            
+            // replace icon with the play icon
+            playpause_btn.innerHTML = '<i class="fas fa-play"></i>';
+        }
+ 
+        // moves to the next track
+        function nextTrack() {
+            if (track_index < track_list.length - 1)
+                track_index += 1;
+            else track_index = 0;
+            loadTrack(track_index);
+            playTrack();
+        }
+ 
+        // moves to the previous track
+        function prevTrack() {
+            if (track_index > 0)
+                track_index -= 1;
+            else track_index = track_list.length;
+            loadTrack(track_index);
+            playTrack();
+        }
+ 
+        // seeker slider
+        function seekTo() {
+            seekto = curr_track.duration * (seek_slider.value / 100);
+            curr_track.currentTime = seekto;
+        }
+ 
+        function seekUpdate() {
+            let seekPosition = 0;
+            
+            // check if the current track duration is a legible number
+            if (!isNaN(curr_track.duration)) {
+                seekPosition = curr_track.currentTime * (100 / curr_track.duration);
+                seek_slider.value = seekPosition;
+                
+            // calculate the time left and the total duration
+            let currentMinutes = Math.floor(curr_track.currentTime / 60);
+            let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
+            let durationMinutes = Math.floor(curr_track.duration / 60);
+            let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
+                
+            // adding a zero to the single digit time values
+            if (currentSeconds < 10) { currentSeconds = "0" + currentSeconds; }
+            if (durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
+            if (currentMinutes < 10) { currentMinutes = currentMinutes; }
+            if (durationMinutes < 10) { durationMinutes = durationMinutes; }
+ 
+            curr_time.textContent = currentMinutes + ":" + currentSeconds;
+            total_duration.textContent = durationMinutes + ":" + durationSeconds;
+          }
+        }
+        
+        // load the first track in the tracklist
+        loadTrack(track_index);
+    </script>
+    
+  </div>
+</html>
