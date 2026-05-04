@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>letter to my mishka</title>
+    <link rel="icon" type="image/png" href="art/wax-stamp.png">
+    <link href="./about meee_files/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <nav class="navbar">
+      <table cellspacing="5" cellpadding="5">
+        <tbody>
+          <tr>
+            <td>
+              <a href="home.html" style="color:gainsboro;" class="hover-italic">home</a>
+            </td>
+            <td>
+              <a href="landing.html" style="color:gainsboro;" class="hover-italic">letter to my mishka</a>
+            </td>
+            <td>
+              <a href="us.html" style="color:gainsboro;" class="hover-italic">us</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </nav>
+    <div class="container">
+      <div class="left">
+        <img src="art/swirls.png" width="400">
+      </div>
+      <div class="main">
+        <div class="box">
+          <h1 style="color:white;">
+            <em>happy birthday, mishka</em>
+          </h1>
+          <p>mishkaaaa!!! it's that time of year again, your birthday!!! we truly are growing old together...</p>
+          <p>i have seen myself become so much more of an appreciative person over the years i have known you. today especially, as well as the days leading up to your birthday, i remind myself of all the amazing things i have to look forward to because of your presence in my life.</p>
+          <p>i want you to know how much you mean to me. as the years go on, i find myself getting more emotional when i look back on times past with you. writing to you always makes me feel so strongly. i gazed a while at the website i made last year for you. it's shocking how much has changed yet I feel more close to you than ever. i hope the way i stylized this for you expresses that. even going back to a few months ago, when i gave you your valentine's day gift, it felt as though i was closer to you than i had ever been before. i've said this, but i really do love knowing you, it is the best feeling when i know that you feel seen by me, you deserve to feel that way always, and i will always do my best to make sure you do. I hope this year is the best one yet for you, and that we will continue to grow together like we have done. I wish you the best birthday, and I hope you enjoy the rest of this little website, i can't wait for you to get your physical gift toooo!! MWAH MWAH MWAH!!!</p>
+          </p>
+          <div class="mp3-player">
+            <img class="player-bg" src="art/mp3player.png">
+            <img id="album-art" src="art/kissing.jpg">
+            <div id="track-title"></div>
+            <div class="wheel">
+              <span class="top wheel-btn">MENU</span>
+              <span class="left wheel-btn" id="prev">⏮</span>
+              <span class="right wheel-btn" id="next">⏭</span>
+              <span class="bottom wheel-btn" id="play-pause">▶</span>
+              <div class="center"></div>
+            </div>
+            <audio id="audio-player" src="art/song.mp3"></audio>
+          </div>
+          <p>P.S. oh my god this little thing took so long to make... maybe you'll copy it for ur website heh</p>
+          <img src="art/0503.png" width="250">
+          <style>
+            ::selection {
+              color: #ffffff;
+              background: rgb(88, 29, 29);
+            }
+
+            body {
+              background-image: url(art/reptile.jpg);
+              background-repeat: repeat;
+              background-size: 50% 50%;
+            }
+
+            .container {
+              display: flex;
+            }
+
+            .main {}
+
+            .mp3-player {
+              width: 200px;
+              margin: 20px auto;
+              text-align: center;
+              position: relative;
+              margin-left: -7px;
+              margin-top: 0;
+            }
+
+            .mp3-player img {
+              width: 180px;
+              height: 80px;
+              z-index: 10;
+              position: relative;
+            }
+
+            .wheel {
+              position: absolute;
+              width: 58px;
+              height: 54px;
+              margin: 20px auto;
+              border-radius: 50%;
+              background: #f0f0f0;
+              z-index: 70;
+              top: -7px;
+              left: 118px;
+              justify-content: center;
+            }
+
+            .wheel-btn {
+              position: absolute;
+              font-size: 1;
+              cursor: pointer;
+              user-select: none;
+              width: 10px;
+              font-weight: bold;
+              height: 10px;
+              line-height: 10px;
+              z-index: 71;
+            }
+
+            .wheel .top {
+              left: 18px;
+              top: 4px;
+              color: #8C8E8B;
+              transform: translateX(-50%) scale(0.6);
+              transform-origin: center;
+              font-family: sans-serif;
+            }
+
+            .wheel .bottom {
+              bottom: 4px;
+              left: 50%;
+              color: #8C8E8B;
+              transform: translateX(-50%) scale(0.7);
+            }
+
+            .wheel .left {
+              left: 3px;
+              top: 26px;
+              color: #8C8E8B;
+              transform: translateY(-50%) scale(0.7);
+            }
+
+            .wheel .right {
+              right: 3px;
+              top: 26px;
+              color: #8C8E8B;
+              transform: translateY(-50%) scale(0.7);
+            }
+
+            .center {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              width: 20px;
+              height: 20px;
+              background: #D2D3D2;
+              border-radius: 50%;
+              transform: translate(-50%, -50%);
+            }
+
+            #album-art {
+              position: absolute;
+              width: 90px;
+              height: 65px;
+              object-fit: fill;
+              border-radius: 2px;
+              top: 7px;
+              left: 18px;
+              z-index: 4;
+            }
+
+            .sidebar {
+              width: 110px;
+              height: 100%;
+              margin-left: 10px;
+            }
+
+            .left {
+              display: flex;
+            }
+
+            h1 {
+              color: white;
+              text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 0, 0), 0 0 5px #eacaca;
+            }
+
+            img {
+              overflow-clip-margin: content-box;
+              overflow: clip;
+            }
+
+            .box {
+              color: black;
+              display: block;
+              font-family: times;
+              height: 700.612px;
+              padding: 10px;
+              width: 600px;
+              background-color: white;
+              border: solid #b14343;
+              opacity: 95%;
+              z-index: 4;
+              margin: auto;
+              box-shadow: inset 0 0 10px black;
+            }
+
+            .box3 {
+              display: block;
+              font-family: times;
+              height: 300.210px;
+              margin: auto;
+              margin-top: 20px;
+              margin-bottom: 20px;
+              margin-right: 20px;
+              padding-bottom: 40px;
+              padding-left: 10px;
+              padding-right: 10px;
+              padding-top: 0px;
+              width: 550px;
+              background-color: white;
+              border: dotted grey;
+              opacity: 89%;
+              box-shadow: inset 0 0 10px black;
+              overflow-x: auto;
+            }
+
+            .box4 {
+              display: box;
+              background-color: #CAE3EA;
+              padding: 10px;
+              height: 380px;
+              width: 105px;
+              border: 5px double grey;
+              margin-bottom: 5px;
+              margin-top: 20px;
+              overflow: scroll;
+            }
+
+            .box6 {
+              display: box;
+              background-color: #CAE3EA;
+              padding: 10px;
+              border: 5px double grey;
+              width: 105px;
+              height: 130px;
+            }
+
+            #image {
+              filter: grayscale(100%);
+              -webkit-filter: grayscale(100%);
+            }
+
+            #image:hover {
+              filter: none;
+              -webkit-filter: grayscale(0);
+            }
+
+            .navbar {
+              color: white;
+              text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px grey;
+            }
+
+            html {
+              overflow: scroll;
+              overflow-x: hidden;
+            }
+
+            ::-webkit-scrollbar {
+              width: 0;
+              background: transparent;
+            }
+
+            ::-webkit-scrollbar-thumb {
+              background: transparent;
+            }
+
+            html {
+              overflow: scroll;
+              overflow-x: hidden;
+            }
+
+            ::-webkit-scrollbar {
+              width: 0;
+              background: transparent;
+            }
+
+            ::-webkit-scrollbar-thumb {
+              background: transparent;
+            }
+
+            .hover-italic:hover {
+              font-style: italic;
+            }
+
+            * {
+  cursor: url('https://cdn.cursors-4u.net/previews/thick-skeleton-skull-8fe05781-32.webp') 32 32, auto !important;
+}
+          </style>
+          <div style="max-height: 300px; position: fixed; left: 20px; bottom: 0px; z-index: 99;">
+            <div class="box2">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr valign="top">
+                    <td id="footerWarpper">
+                      <div align="center">
+                        <div align="center"></div>
+                        <br>
+                        <br>
+                        <font face="Arial, Helvetica, sans-serif" style="color:white; text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px grey;" size="0">@2006-2026 mishka nazarani. all rights reserved. </font>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <script>
+              const playlist = [{
+                src: "art/kissme.mp3",
+                art: "art/kissme.png",
+                title: "Kiss Me - Sixpence None The Richer"
+              }, {
+                src: "art/09 Pocket.mp3",
+                art: "art/flh.png",
+                title: "Feeble Little Horse - Pocket"
+              }, {
+                src: "art/04. MYMP - With You.mp3",
+                art: "art/withyou.png",
+                title: "With You - MYMP"
+              }];
+              let currentTrack = 0;
+              const audio = document.getElementById("audio-player");
+              const albumArt = document.getElementById("album-art");
+              const playPauseBtn = document.getElementById("play-pause");
+
+              function loadTrack(index) {
+                const track = playlist[index];
+                if (albumArt) albumArt.src = track.art;
+                if (audio && audio.src !== track.src) audio.src = track.src;
+                if (audio) audio.volume = 0.2;
+              }
+              if (playPauseBtn) {
+                playPauseBtn.addEventListener("click", () => {
+                  if (audio.paused) {
+                    audio.play();
+                    playPauseBtn.textContent = "❚❚";
+                  } else {
+                    audio.pause();
+                    playPauseBtn.textContent = "▶";
+                  }
+                });
+              }
+              document.getElementById("next")?.addEventListener("click", () => {
+                currentTrack = (currentTrack + 1) % playlist.length;
+                loadTrack(currentTrack);
+                audio.play();
+                playPauseBtn.textContent = "❚❚";
+              });
+              document.getElementById("prev")?.addEventListener("click", () => {
+                currentTrack = (currentTrack - 1 + playlist.length) % playlist.length;
+                loadTrack(currentTrack);
+                audio.play();
+                playPauseBtn.textContent = "❚❚";
+              });
+              loadTrack(currentTrack);
+            </script>
+          </div>
+        </div>
+  </body>
+</html>
